@@ -5,6 +5,7 @@ import (
 	"fmt"
 )
 func main() {
+	fmt.Println("-l --option 'normal' ,'map' , 'infinite', 'range' ")
 	 loopType := flag.String("l","range","type of loop")
 	 flag.Parse()
 	fmt.Printf("loop type is %v \n", *loopType)
