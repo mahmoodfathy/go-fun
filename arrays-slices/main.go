@@ -1,6 +1,7 @@
 package main
 
 import (
+	arrayops "arrays-slices/array-ops"
 	"encoding/json"
 	"fmt"
 )
@@ -26,6 +27,12 @@ func main() {
 	appendSlice()
 	fmt.Println("=====================================convert slice to json")
 	convertSliceToJson()
+	fmt.Println("=====================================find an item in a slice and delete it")
+    arr :=[]int{1,2,3,4,5,6,7}
+    fmt.Printf("slice before the deletion is: %v \n",arr)
+    newarr :=arrayops.FindItemAndDelete(arr,6)
+    fmt.Printf("slice after the deletion is: %v\n ",newarr)
+
 
 }
 func test(sample [2]string) {
