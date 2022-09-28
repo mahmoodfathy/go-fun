@@ -59,6 +59,7 @@ func whileLoop(arr []string){
 	i := 0
 	for i <2{
 		fmt.Printf("index is : %v and item is %v \n",i,arr[i])
+		i++;
 	}
 }
 func loopInfinite(){
