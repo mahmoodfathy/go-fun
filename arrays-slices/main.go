@@ -33,6 +33,12 @@ func main() {
     newarr :=arrayops.FindItemAndDelete(arr,6)
     fmt.Printf("slice after the deletion is: %v\n ",newarr)
 
+    //slices are not comparable will throw a compilation error but can be deeply equaled using reflect
+    //arrays are comparable types if if the type of value of array element is comparable
+    fmt.Println("=====================================Slices and array comparability")
+    fmt.Println("slices are not comparable will throw a compilation error but can be deeply equaled using reflect")
+    fmt.Println("arrays are comparable types if if the type of value of array element is comparable")
+
 
 }
 func test(sample [2]string) {
